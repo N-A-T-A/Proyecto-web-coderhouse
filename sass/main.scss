@@ -1,0 +1,51 @@
+@import "variables";
+
+#descripDePagina{   
+    #formularioContacto{
+        form{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            gap: 15px;
+               
+            #datos{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #consulta{
+                display:flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }    
+    }
+}
+
+#pagServicios{
+    section{
+        @include desPagina;
+        display: grid;
+        grid-template-areas: 
+        "p p p"
+        "div div h2"
+        "input input input";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+
+        h2 {
+            color: $colorh2;
+        }
+        
+        div{
+            img{
+                height: auto;
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
+

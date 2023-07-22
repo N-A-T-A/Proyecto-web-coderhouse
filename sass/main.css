@@ -1,0 +1,35 @@
+#descripDePagina #formularioContacto form {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 15px;
+}
+#descripDePagina #formularioContacto form #datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#descripDePagina #formularioContacto form #consulta {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#pagServicios section {
+  margin: 50px 20%;
+  border: solid 5px;
+  border-color: darkslategray;
+  padding: 2%;
+  background-color: #a3a3a3;
+  display: grid;
+  grid-template-areas: "p p p" "div div h2" "input input input";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+#pagServicios section h2 {
+  color: #4579da;
+}
+#pagServicios section div img {
+  height: auto;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

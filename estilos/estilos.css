@@ -60,13 +60,11 @@ header nav ul li a {
 }
 
 #descripDePagina {
-    display: block;
     margin: 50px 20%;
     border:solid 5px;
     border-color: darkslategray;
     padding: 2%;
     background-color: #a3a3a3;
-    z-index: 3;
 }
 
 #descripDePagina h2 {
