@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #descripDePagina #formularioContacto form {
   display: grid;
   grid-template-columns: auto auto;
@@ -32,4 +38,13 @@
 #pagServicios section div img {
   height: auto;
   width: 100%;
+}
+
+footer {
+  background-color: #a3a3a3;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
 }/*# sourceMappingURL=main.css.map */
