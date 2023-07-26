@@ -69,6 +69,11 @@ header nav ul li a {
 
 #descripDePagina h2 {
     color: #4579da;
+    font-size: xx-large;
+}
+
+#descripDePagina p {
+    font-family: 'Poppins', sans-serif;
 }
 
 #ubicacion iframe {

@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/*estilo pagina de contactos*/
 #descripDePagina #formularioContacto form {
   display: grid;
   grid-template-columns: auto auto;
@@ -21,23 +22,41 @@
   flex-wrap: wrap;
 }
 
+/* estilos pagina de servicios*/
 #pagServicios section {
   margin: 50px 20%;
   border: solid 5px;
   border-color: darkslategray;
   padding: 2%;
   background-color: #a3a3a3;
-  display: grid;
-  grid-template-areas: "p p p" "div div h2" "input input input";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
 }
 #pagServicios section h2 {
   color: #4579da;
+  font-size: xx-large;
+  padding: 15px;
 }
-#pagServicios section div img {
+#pagServicios section div {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+}
+#pagServicios section div div img {
+  max-width: 300px;
   height: auto;
-  width: 100%;
+}
+#pagServicios section input {
+  padding: 10px;
+  height: 40px;
+  width: 110px;
+  border-radius: 5px;
+  font-size: medium;
+  position: relative;
+  left: 50%;
+  bottom: 40px;
+}
+#pagServicios section p {
+  font-family: "Poppins", sans-serif;
 }
 
 footer {
@@ -47,4 +66,5 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap;
   align-content: space-around;
+  bottom: 100%;
 }/*# sourceMappingURL=main.css.map */

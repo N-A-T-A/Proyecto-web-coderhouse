@@ -1,5 +1,7 @@
 $colorh2: #4579da;
 $colorfondo: #a3a3a3;
+$fuenteParrafo: 'Poppins', sans-serif; 
+
 
 @mixin desPagina {
     margin: 50px 20%;
@@ -14,3 +16,10 @@ $colorfondo: #a3a3a3;
     border-color: darkslategray;
 }
 
+@mixin boton{
+    padding: 10px;
+    height: 40px;
+    width: 110px;
+    border-radius: 5px;
+    font-size: medium;
+}
