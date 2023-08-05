@@ -24,12 +24,13 @@
     }
 }
 
+
 header {
     display: flex;
     background-color: #a3a3a3;
     padding: 30px;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
     position: relative;
     z-index: 3;
 }

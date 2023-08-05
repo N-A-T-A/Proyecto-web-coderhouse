@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /*estilo pagina de contactos*/
 #descripDePagina #formularioContacto form {
   display: grid;
@@ -16,10 +22,17 @@
   flex-direction: column;
   justify-content: center;
 }
+#descripDePagina #formularioContacto form #datos input {
+  height: 25px;
+}
 #descripDePagina #formularioContacto form #consulta {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+#ubicacion {
+  margin-top: auto;
 }
 
 /* estilos pagina de servicios*/
@@ -41,8 +54,13 @@
   align-items: center;
   gap: 10px;
 }
+#pagServicios section div div {
+  /*max-width: 100%;*/
+  width: 500px;
+  height: 300px;
+}
 #pagServicios section div div img {
-  max-width: 300px;
+  max-width: 100%;
   height: auto;
 }
 #pagServicios section input {
@@ -61,10 +79,15 @@
 
 footer {
   background-color: #a3a3a3;
-  height: 50px;
+  width: 100%;
+  height: 75px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   align-content: space-around;
-  bottom: 100%;
+  margin-top: auto;
+  gap: 15px;
+}
+footer a svg {
+  color: darkslategray;
 }/*# sourceMappingURL=main.css.map */
