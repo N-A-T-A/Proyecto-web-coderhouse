@@ -14,7 +14,6 @@ body{
 
 
 /*estilo pagina de contactos*/
-
 #descripDePagina{   
     #formularioContacto{
         form{
@@ -47,7 +46,6 @@ body{
 }
 
 /* estilos pagina de servicios*/
-
 #pagServicios{
     section{
         @include desPagina;
@@ -80,8 +78,7 @@ body{
             @include boton;
             position: relative;
             left: 50%;
-            bottom: 40px;
-            
+            bottom: 40px;           
         }  
         
         p{
@@ -90,6 +87,7 @@ body{
     }
 }
 
+/*estilo footer*/
 footer{
     background-color: $colorfondo;
     width: 100%;
@@ -108,3 +106,34 @@ footer{
     }
     
 }
+
+
+/*estilo pag manuales*/
+.main-manuales{   
+    padding-bottom: 3%;   
+    
+    section{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 30px;
+
+        div{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 400px;
+            width: 500px;
+            border: solid 2px;
+            color: darkslategray;
+            border-radius: 3px;
+
+            h3{
+                color: $colorh2;
+                font-size: x-large;
+            }
+        }
+    }
+}
+

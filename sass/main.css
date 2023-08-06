@@ -65,7 +65,6 @@ body {
 }
 #pagServicios section input {
   padding: 10px;
-  height: 40px;
   width: 110px;
   border-radius: 5px;
   font-size: medium;
@@ -77,6 +76,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/*estilo footer*/
 footer {
   background-color: #a3a3a3;
   width: 100%;
@@ -90,4 +90,30 @@ footer {
 }
 footer a svg {
   color: darkslategray;
+}
+
+/*estilo pag manuales*/
+.main-manuales {
+  padding-bottom: 3%;
+}
+.main-manuales section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.main-manuales section div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+  width: 500px;
+  border: solid 2px;
+  color: darkslategray;
+  border-radius: 3px;
+}
+.main-manuales section div h3 {
+  color: #4579da;
+  font-size: x-large;
 }/*# sourceMappingURL=main.css.map */
