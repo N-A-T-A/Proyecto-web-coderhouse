@@ -133,7 +133,68 @@ footer{
                 color: $colorh2;
                 font-size: x-large;
             }
+            a :hover{
+                transform: scale(1.6);
+            }
         }
     }
 }
 
+/*estilo pag alquiler*/
+.main-alquiler{
+    padding-bottom: 3%;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    
+    section{
+        display: flex;
+        flex-direction: row-reverse;
+        border: solid 2px;
+        color: darkslategray;
+        border-radius: 3px;
+        
+        .div-descripcion{
+            width: 500px;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-left: 5px;
+
+            h3{
+                color: $colorh2;
+            }
+            
+            p{
+                padding-left: 5px;
+                padding-right: 10px;
+                font-family: $fuenteParrafo;
+            }
+            
+            input{
+                @include boton;
+            }  
+        }    
+        
+        
+        .cont-img{
+            height: auto;
+            width: 300px;
+            display: inline-flex;
+            padding: 10px;
+
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }    
+        .cont-img :hover{
+            transform: scale(1.5);
+            
+        }
+        
+    }
+}

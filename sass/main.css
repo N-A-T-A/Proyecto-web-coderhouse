@@ -116,4 +116,59 @@ footer a svg {
 .main-manuales section div h3 {
   color: #4579da;
   font-size: x-large;
+}
+.main-manuales section div a :hover {
+  transform: scale(1.6);
+}
+
+/*estilo pag alquiler*/
+.main-alquiler {
+  padding-bottom: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.main-alquiler section {
+  display: flex;
+  flex-direction: row-reverse;
+  border: solid 2px;
+  color: darkslategray;
+  border-radius: 3px;
+}
+.main-alquiler section .div-descripcion {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+}
+.main-alquiler section .div-descripcion h3 {
+  color: #4579da;
+}
+.main-alquiler section .div-descripcion p {
+  padding-left: 5px;
+  padding-right: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.main-alquiler section .div-descripcion input {
+  padding: 10px;
+  width: 110px;
+  border-radius: 5px;
+  font-size: medium;
+}
+.main-alquiler section .cont-img {
+  height: auto;
+  width: 300px;
+  display: inline-flex;
+  padding: 10px;
+}
+.main-alquiler section .cont-img img {
+  max-width: 100%;
+  height: auto;
+}
+.main-alquiler section .cont-img :hover {
+  transform: scale(1.5);
 }/*# sourceMappingURL=main.css.map */
