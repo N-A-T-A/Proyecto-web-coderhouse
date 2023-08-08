@@ -30,7 +30,30 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
 }
+#descripDePagina #formularioContacto form #botones input {
+  padding: 3px 13px;
+  border-radius: 3px;
+}
 
+@media (max-width: 1023px) {
+  #descripDePagina {
+    margin: 50px 10%;
+    border: solid 5px;
+    border-color: darkslategray;
+    padding: 2%;
+    background-color: #a3a3a3;
+  }
+}
+@media (max-width: 991px) {
+  #descripDePagina {
+    margin: 50px 5%;
+  }
+}
+@media (max-width: 991px) {
+  #descripDePagina #formularioContacto {
+    display: block;
+  }
+}
 #ubicacion {
   margin-top: auto;
 }

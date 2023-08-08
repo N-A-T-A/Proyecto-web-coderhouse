@@ -1,28 +1,9 @@
-@media (max-width: 767px){
+@media (max-width: 991px){
     header {
-        display: flex;
         flex-direction: row-reverse;
     }
-
-    header #menu ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    header #menu #menuMobile + ul {
-        display: none;
-    }
-
-    header #menu #menuMobile:checked + ul {
-    display: block;
-    }   
 }
-
-@media (min-width: 768px){
-    header #menu input{
-        display:none;
-    }
-}
+   
 
 
 header {

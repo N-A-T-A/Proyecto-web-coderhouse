@@ -1,7 +1,9 @@
 $colorh2: #4579da;
 $colorfondo: #a3a3a3;
 $fuenteParrafo: 'Poppins', sans-serif; 
-
+$desktop: 1023px;
+$tablet: 991px;
+$mobile: 575px;
 
 @mixin desPagina {
     margin: 50px 20%;
