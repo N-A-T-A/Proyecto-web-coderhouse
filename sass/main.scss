@@ -267,10 +267,26 @@ footer{
 }
 
 /*media quieries pag servicios*/
+
+@media (max-width: $desktop) {
+    #pagServicios{
+        section{
+            margin: 50px 10%;
+            border:solid 5px;
+            border-color: darkslategray;
+            padding: 2%;
+            background-color: #a3a3a3;   
+        }
+       
+    }
+    
+}
 @media (max-width: $tablet) {
     #pagServicios{
         section{
+            margin: 50px 5%;
             input{
+                left: 43%;
                 bottom: 0px;
             }
             div{

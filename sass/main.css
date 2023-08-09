@@ -215,8 +215,21 @@ footer a svg {
   }
 }
 /*media quieries pag servicios*/
+@media (max-width: 1023px) {
+  #pagServicios section {
+    margin: 50px 10%;
+    border: solid 5px;
+    border-color: darkslategray;
+    padding: 2%;
+    background-color: #a3a3a3;
+  }
+}
 @media (max-width: 991px) {
+  #pagServicios section {
+    margin: 50px 5%;
+  }
   #pagServicios section input {
+    left: 43%;
     bottom: 0px;
   }
   #pagServicios section div div {
