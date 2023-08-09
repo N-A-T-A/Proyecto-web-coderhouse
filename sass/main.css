@@ -35,25 +35,6 @@ body {
   border-radius: 3px;
 }
 
-@media (max-width: 1023px) {
-  #descripDePagina {
-    margin: 50px 10%;
-    border: solid 5px;
-    border-color: darkslategray;
-    padding: 2%;
-    background-color: #a3a3a3;
-  }
-}
-@media (max-width: 991px) {
-  #descripDePagina {
-    margin: 50px 5%;
-  }
-}
-@media (max-width: 991px) {
-  #descripDePagina #formularioContacto {
-    display: block;
-  }
-}
 #ubicacion {
   margin-top: auto;
 }
@@ -79,7 +60,7 @@ body {
 }
 #pagServicios section div div {
   /*max-width: 100%;*/
-  width: 500px;
+  width: 700px;
   height: 300px;
 }
 #pagServicios section div div img {
@@ -145,21 +126,21 @@ footer a svg {
 }
 
 /*estilo pag alquiler*/
-.main-alquiler {
+.main-alquiler section {
   padding-bottom: 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
-.main-alquiler section {
+.main-alquiler section section {
   display: flex;
   flex-direction: row-reverse;
   border: solid 2px;
   color: darkslategray;
   border-radius: 3px;
 }
-.main-alquiler section .div-descripcion {
+.main-alquiler section section .div-descripcion {
   width: 500px;
   height: 300px;
   display: flex;
@@ -168,30 +149,77 @@ footer a svg {
   align-items: center;
   padding-left: 5px;
 }
-.main-alquiler section .div-descripcion h3 {
+.main-alquiler section section .div-descripcion h3 {
   color: #4579da;
 }
-.main-alquiler section .div-descripcion p {
+.main-alquiler section section .div-descripcion p {
   padding-left: 5px;
   padding-right: 10px;
   font-family: "Poppins", sans-serif;
 }
-.main-alquiler section .div-descripcion input {
+.main-alquiler section section .div-descripcion input {
   padding: 10px;
   width: 110px;
   border-radius: 5px;
   font-size: medium;
 }
-.main-alquiler section .cont-img {
+.main-alquiler section section .cont-img {
   height: auto;
   width: 300px;
   display: inline-flex;
   padding: 10px;
 }
-.main-alquiler section .cont-img img {
+.main-alquiler section section .cont-img img {
   max-width: 100%;
   height: auto;
 }
-.main-alquiler section .cont-img :hover {
+.main-alquiler section section .cont-img :hover {
   transform: scale(1.5);
+}
+
+/*media queries descripcion de pagina*/
+@media (max-width: 1023px) {
+  #descripDePagina {
+    margin: 50px 10%;
+    border: solid 5px;
+    border-color: darkslategray;
+    padding: 2%;
+    background-color: #a3a3a3;
+  }
+}
+@media (max-width: 991px) {
+  #descripDePagina {
+    margin: 50px 5%;
+  }
+}
+/*media queries pag contacto*/
+@media (max-width: 991px) {
+  #descripDePagina #formularioContacto form {
+    display: block;
+  }
+  #descripDePagina #formularioContacto form #datos {
+    padding-bottom: 18px;
+  }
+  #descripDePagina #formularioContacto form #consulta {
+    padding-bottom: 18px;
+  }
+  #descripDePagina #formularioContacto form #consulta textarea {
+    height: 100px;
+  }
+}
+/*media queries pag manuales*/
+@media (max-width: 991px) {
+  .main-manuales section div {
+    width: 350px;
+    height: 350px;
+  }
+}
+/*media quieries pag servicios*/
+@media (max-width: 991px) {
+  #pagServicios section input {
+    bottom: 0px;
+  }
+  #pagServicios section div div {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

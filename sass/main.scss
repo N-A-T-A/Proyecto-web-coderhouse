@@ -49,30 +49,7 @@ body{
     }
 }
 
-@media (max-width: $desktop) {
-    #descripDePagina{
-        margin: 50px 10%;
-        border:solid 5px;
-        border-color: darkslategray;
-        padding: 2%;
-        background-color: #a3a3a3;  
-    }   
-}
 
-@media (max-width: $tablet) {
-    #descripDePagina{
-       margin: 50px 5%; 
-    }
-    
-}
-
-@media (max-width: $tablet) {
-    #descripDePagina{
-        #formularioContacto{
-            display: block;
-        }
-    }
-}
 #ubicacion{
     margin-top: auto;
 }
@@ -96,7 +73,7 @@ body{
             
             div {
                 /*max-width: 100%;*/
-                width: 500px;
+                width: 700px;
                 height: 300px;
                 img{
                     max-width: 100%;
@@ -174,59 +151,133 @@ footer{
 
 /*estilo pag alquiler*/
 .main-alquiler{
-    padding-bottom: 3%;  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    
     section{
+        padding-bottom: 3%;  
         display: flex;
-        flex-direction: row-reverse;
-        border: solid 2px;
-        color: darkslategray;
-        border-radius: 3px;
-        
-        .div-descripcion{
-            width: 500px;
-            height: 300px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    
+        section{
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            padding-left: 5px;
-
-            h3{
-                color: $colorh2;
-            }
-            
-            p{
+            flex-direction: row-reverse;
+            border: solid 2px;
+            color: darkslategray;
+            border-radius: 3px;
+        
+            .div-descripcion{
+                width: 500px;
+                height: 300px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
                 padding-left: 5px;
-                padding-right: 10px;
-                font-family: $fuenteParrafo;
-            }
-            
-            input{
-                @include boton;
-            }  
-        }    
-        
-        
-        .cont-img{
-            height: auto;
-            width: 300px;
-            display: inline-flex;
-            padding: 10px;
 
-            img{
-                max-width: 100%;
+                h3{
+                    color: $colorh2;
+                }
+            
+                p{
+                    padding-left: 5px;
+                    padding-right: 10px;
+                    font-family: $fuenteParrafo;
+                }
+            
+                input{
+                    @include boton;
+                }  
+            }    
+        
+        
+            .cont-img{
                 height: auto;
+                width: 300px;
+                display: inline-flex;
+                padding: 10px;
+
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }    
+            .cont-img :hover{
+                transform: scale(1.5);
             }
-        }    
-        .cont-img :hover{
-            transform: scale(1.5);
+        
+        }
+    }
+    
+}
+
+/*media queries descripcion de pagina*/ 
+@media (max-width: $desktop) {
+    #descripDePagina{
+        margin: 50px 10%;
+        border:solid 5px;
+        border-color: darkslategray;
+        padding: 2%;
+        background-color: #a3a3a3;  
+    }   
+}
+
+@media (max-width: $tablet) {
+    #descripDePagina{
+       margin: 50px 5%; 
+    }
+    
+}
+
+/*media queries pag contacto*/
+@media (max-width: $tablet) {
+    #descripDePagina{
+        #formularioContacto{
+            form{
+                display: block;
+
+                #datos{
+                    padding-bottom: 18px;
+                }
+
+                #consulta{
+                    padding-bottom: 18px;
+
+                    textarea{
+                        height: 100px;
+                    }
+                }
+            }
             
         }
-        
+    }
+}
+
+/*media queries pag manuales*/
+@media (max-width: $tablet){
+    .main-manuales{
+        section{
+            div{
+                width: 350px;
+                height: 350px; 
+            }
+
+            
+        }
+    }
+}
+
+/*media quieries pag servicios*/
+@media (max-width: $tablet) {
+    #pagServicios{
+        section{
+            input{
+                bottom: 0px;
+            }
+            div{
+                div{   
+                   display: none;
+                }
+            }
+        }
     }
 }
