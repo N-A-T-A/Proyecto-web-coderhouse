@@ -151,8 +151,9 @@ footer{
 
 /*estilo pag alquiler*/
 .main-alquiler{
-    section{
-        padding-bottom: 3%;  
+    margin-bottom: 3%;
+
+    section{   
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -161,6 +162,7 @@ footer{
         section{
             display: flex;
             flex-direction: row-reverse;
+            flex-wrap: nowrap;
             border: solid 2px;
             color: darkslategray;
             border-radius: 3px;
@@ -190,7 +192,7 @@ footer{
             }    
         
         
-            .cont-img{
+            .img-desktop{
                 height: auto;
                 width: 300px;
                 display: inline-flex;
@@ -201,7 +203,7 @@ footer{
                     height: auto;
                 }
             }    
-            .cont-img :hover{
+            .img-desktop:hover{
                 transform: scale(1.5);
             }
         
@@ -266,8 +268,8 @@ footer{
     }
 }
 
-/*media quieries pag servicios*/
 
+/*media quieries pag servicios*/
 @media (max-width: $desktop) {
     #pagServicios{
         section{
@@ -281,6 +283,7 @@ footer{
     }
     
 }
+
 @media (max-width: $tablet) {
     #pagServicios{
         section{
@@ -296,4 +299,61 @@ footer{
             }
         }
     }
+}
+
+
+/*media queries pag alquiler
+@media (min-width: $desktop) {
+    .main-alquiler{
+        section{
+            section{
+                .div-descripcion{
+                    .img-mobile{
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+*/
+@media (min-width: $mobile) {
+    .main-alquiler{
+        section{
+            section{
+                .div-descripcion{
+                    .img-mobile{
+                        display: none;
+                    }
+                }
+                /*.img-desktop{
+                    /*display: none;
+                }*/
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .main-alquiler{
+        section{
+            gap: 30px;
+            margin: 0 2%;
+
+            section{
+                .img-desktop{
+                    display: none;
+                }
+
+                .div-descripcion{
+                    width: auto;
+                    height: auto;
+                    flex-flow: column nowrap;
+                    gap: 10px;
+                    margin: 10px 10px;
+                }
+            }
+        }
+    } 
 }

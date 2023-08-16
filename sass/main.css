@@ -126,8 +126,10 @@ footer a svg {
 }
 
 /*estilo pag alquiler*/
+.main-alquiler {
+  margin-bottom: 3%;
+}
 .main-alquiler section {
-  padding-bottom: 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -136,6 +138,7 @@ footer a svg {
 .main-alquiler section section {
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: nowrap;
   border: solid 2px;
   color: darkslategray;
   border-radius: 3px;
@@ -163,17 +166,17 @@ footer a svg {
   border-radius: 5px;
   font-size: medium;
 }
-.main-alquiler section section .cont-img {
+.main-alquiler section section .img-desktop {
   height: auto;
   width: 300px;
   display: inline-flex;
   padding: 10px;
 }
-.main-alquiler section section .cont-img img {
+.main-alquiler section section .img-desktop img {
   max-width: 100%;
   height: auto;
 }
-.main-alquiler section section .cont-img :hover {
+.main-alquiler section section .img-desktop:hover {
   transform: scale(1.5);
 }
 
@@ -234,5 +237,47 @@ footer a svg {
   }
   #pagServicios section div div {
     display: none;
+  }
+}
+/*media queries pag alquiler
+@media (min-width: $desktop) {
+    .main-alquiler{
+        section{
+            section{
+                .div-descripcion{
+                    .img-mobile{
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+*/
+@media (min-width: 575px) {
+  .main-alquiler section section {
+    /*.img-desktop{
+        /*display: none;
+    }*/
+  }
+  .main-alquiler section section .div-descripcion .img-mobile {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .main-alquiler section {
+    gap: 30px;
+    margin: 0 2%;
+  }
+  .main-alquiler section section .img-desktop {
+    display: none;
+  }
+  .main-alquiler section section .div-descripcion {
+    width: auto;
+    height: auto;
+    flex-flow: column nowrap;
+    gap: 10px;
+    margin: 10px 10px;
   }
 }/*# sourceMappingURL=main.css.map */
